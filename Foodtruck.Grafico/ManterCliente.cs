@@ -83,5 +83,10 @@ namespace Foodtruck.Grafico
                 this.tbEmail.Text = ClienteSelecionado.Email;
             }
         }
+
+        private void tbId_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

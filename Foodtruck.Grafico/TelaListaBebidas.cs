@@ -69,15 +69,15 @@ namespace Foodtruck.Grafico
                 DialogResult resultado = MessageBox.Show("Tem certeza?", "Quer remover?", MessageBoxButtons.OKCancel);
                 if (resultado == DialogResult.OK)
                 {
-                    Cliente clienteSelecionado = (Cliente)dgBebidas.SelectedRows[0].DataBoundItem;
-                    var validacao = Program.Gerenciador.RemoverCliente(clienteSelecionado);
+                    Bebida bebidaSelecionada = (Bebida)dgBebidas.SelectedRows[0].DataBoundItem;
+                    var validacao = Program.Gerenciador.RemoverBebidas(bebidaSelecionada);
                     if (validacao.Valido)
                     {
-                        MessageBox.Show("Cliente removido com sucesso");
+                        MessageBox.Show("Bebida removida com sucesso");
                     }
                     else
                     {
-                        MessageBox.Show("Ocorreu um problema ao remover o cliente");
+                        MessageBox.Show("Ocorreu um problema ao remover a Bebida");
                     }
                     CarregarBebidas();
                 }

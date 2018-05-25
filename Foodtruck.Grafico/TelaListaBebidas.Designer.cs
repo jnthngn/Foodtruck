@@ -20,6 +20,8 @@
             base.Dispose(disposing);
         }
 
+
+
         #region Windows Form Designer generated code
 
         /// <summary>
@@ -82,25 +84,29 @@
             this.dgBebidas.Name = "dgBebidas";
             this.dgBebidas.Size = new System.Drawing.Size(570, 282);
             this.dgBebidas.TabIndex = 3;
-            this.dgBebidas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgBebidas_CellContentClick);
+
             // 
             // Id
             // 
+            this.Id.DataPropertyName = "Id";
             this.Id.HeaderText = "Codigo";
             this.Id.Name = "Id";
             // 
             // Nome
             // 
+            this.Nome.DataPropertyName = "Nome";
             this.Nome.HeaderText = "Nome";
             this.Nome.Name = "Nome";
             // 
             // Tamanho
             // 
+            this.Nome.DataPropertyName = "Tamanho";
             this.Tamanho.HeaderText = "Tamanho";
             this.Tamanho.Name = "Tamanho";
             // 
             // Valor
             // 
+            this.Nome.DataPropertyName = "Valor";
             this.Valor.HeaderText = "Valor";
             this.Valor.Name = "Valor";
             // 
@@ -115,6 +121,8 @@
             this.Controls.Add(this.btAdicionar);
             this.Name = "TelaListaBebidas";
             this.Text = "TelaListaBebidas";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.TelaListaClientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgBebidas)).EndInit();
             this.ResumeLayout(false);
 
