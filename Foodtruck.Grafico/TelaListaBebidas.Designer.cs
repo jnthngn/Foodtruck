@@ -43,9 +43,10 @@
             // 
             // btAdicionar
             // 
-            this.btAdicionar.Location = new System.Drawing.Point(12, 12);
+            this.btAdicionar.Location = new System.Drawing.Point(16, 15);
+            this.btAdicionar.Margin = new System.Windows.Forms.Padding(4);
             this.btAdicionar.Name = "btAdicionar";
-            this.btAdicionar.Size = new System.Drawing.Size(75, 23);
+            this.btAdicionar.Size = new System.Drawing.Size(100, 28);
             this.btAdicionar.TabIndex = 0;
             this.btAdicionar.Text = "Adicionar";
             this.btAdicionar.UseVisualStyleBackColor = true;
@@ -54,9 +55,10 @@
             // btRemover
             // 
             this.btRemover.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btRemover.Location = new System.Drawing.Point(93, 12);
+            this.btRemover.Location = new System.Drawing.Point(124, 15);
+            this.btRemover.Margin = new System.Windows.Forms.Padding(4);
             this.btRemover.Name = "btRemover";
-            this.btRemover.Size = new System.Drawing.Size(75, 23);
+            this.btRemover.Size = new System.Drawing.Size(100, 28);
             this.btRemover.TabIndex = 1;
             this.btRemover.Text = "Remover";
             this.btRemover.UseVisualStyleBackColor = true;
@@ -64,9 +66,10 @@
             // 
             // Alterar
             // 
-            this.Alterar.Location = new System.Drawing.Point(174, 12);
+            this.Alterar.Location = new System.Drawing.Point(232, 15);
+            this.Alterar.Margin = new System.Windows.Forms.Padding(4);
             this.Alterar.Name = "Alterar";
-            this.Alterar.Size = new System.Drawing.Size(75, 23);
+            this.Alterar.Size = new System.Drawing.Size(100, 28);
             this.Alterar.TabIndex = 2;
             this.Alterar.Text = "Alterar";
             this.Alterar.UseVisualStyleBackColor = true;
@@ -74,17 +77,21 @@
             // 
             // dgBebidas
             // 
+            this.dgBebidas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgBebidas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgBebidas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
             this.Nome,
             this.Tamanho,
             this.Valor});
-            this.dgBebidas.Location = new System.Drawing.Point(9, 41);
+            this.dgBebidas.Location = new System.Drawing.Point(4, 51);
+            this.dgBebidas.Margin = new System.Windows.Forms.Padding(4);
             this.dgBebidas.Name = "dgBebidas";
-            this.dgBebidas.Size = new System.Drawing.Size(570, 282);
+            this.dgBebidas.RowTemplate.Height = 33;
+            this.dgBebidas.Size = new System.Drawing.Size(782, 361);
             this.dgBebidas.TabIndex = 3;
-
             // 
             // Id
             // 
@@ -100,25 +107,26 @@
             // 
             // Tamanho
             // 
-            this.Nome.DataPropertyName = "Tamanho";
+            this.Tamanho.DataPropertyName = "Tamanho";
             this.Tamanho.HeaderText = "Tamanho";
             this.Tamanho.Name = "Tamanho";
             // 
             // Valor
             // 
-            this.Nome.DataPropertyName = "Valor";
+            this.Valor.DataPropertyName = "Valor";
             this.Valor.HeaderText = "Valor";
             this.Valor.Name = "Valor";
             // 
             // TelaListaBebidas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(591, 335);
+            this.ClientSize = new System.Drawing.Size(788, 412);
             this.Controls.Add(this.dgBebidas);
             this.Controls.Add(this.Alterar);
             this.Controls.Add(this.btRemover);
             this.Controls.Add(this.btAdicionar);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TelaListaBebidas";
             this.Text = "TelaListaBebidas";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

@@ -72,7 +72,7 @@ namespace Foodtruck.Grafico
             this.Close();
         }
 
-        private void ManterBebida_Shown(object sender, EventArgs e)
+        private void ManterLanche_Shown(object sender, EventArgs e)
         {
             if (LancheSelecionado != null)
             {
@@ -82,7 +82,7 @@ namespace Foodtruck.Grafico
             }
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void tbId_TextChanged(object sender, EventArgs e)
         {
 
         }
