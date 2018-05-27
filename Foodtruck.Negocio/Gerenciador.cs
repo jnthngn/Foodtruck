@@ -212,10 +212,6 @@ namespace Foodtruck.Negocio
 
         //Lanches
 
-        public List<Lanche> TodosOsLanches()
-        {
-            return this.banco.Lanches.ToList();
-        }
 
         public Validacao CadastrarLanche(Lanche lancheCadastrado)
         {
@@ -264,6 +260,11 @@ namespace Foodtruck.Negocio
         public Lanche BuscarLanchePorId(long id)
         {
             return this.banco.Lanches.Where(c => c.Id == id).FirstOrDefault();
+        }
+
+        public List<Lanche> TodosOsLanches()
+        {
+            return this.banco.Lanches.ToList();
         }
 
 

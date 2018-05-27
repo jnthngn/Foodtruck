@@ -43,7 +43,7 @@ namespace Foodtruck.Grafico
             }
             else
             {
-                validacao = Program.Gerenciador.CadastrarLanche(lanche);
+                validacao = Program.Gerenciador.AlterarLanche(lanche);
             }
 
 
@@ -85,6 +85,6 @@ namespace Foodtruck.Grafico
         private void tbId_TextChanged(object sender, EventArgs e)
         {
 
-        }
+        }               
     }
 }

@@ -18,7 +18,7 @@ namespace Foodtruck.Grafico
             InitializeComponent();
         }
 
-        private void AbreTelaInclusaoAlteracao(Negocio.Models.Lanche lancheSelecionado)
+        private void AbreTelaInclusaoAlteracao(Lanche lancheSelecionado)
         {
             ManterLanches tela = new ManterLanches();
             tela.MdiParent = this.MdiParent;
@@ -47,7 +47,7 @@ namespace Foodtruck.Grafico
             dgLanches.DataSource = lanches;
         }
 
-        private void TelaListaClientes_Load(object sender, EventArgs e)
+        private void TelaListaLanches_Load(object sender, EventArgs e)
         {
             CarregarLanches();
         }

@@ -44,7 +44,7 @@ namespace Foodtruck.Grafico
             }
             else
             {
-                validacao = Program.Gerenciador.CadastrarBebida(bebida);
+                validacao = Program.Gerenciador.AlterarBebida(bebida);
             }
 
 
@@ -85,6 +85,11 @@ namespace Foodtruck.Grafico
         }
 
         private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ManterBebida_Load(object sender, EventArgs e)
         {
 
         }

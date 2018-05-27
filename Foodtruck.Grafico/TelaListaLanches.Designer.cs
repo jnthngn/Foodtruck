@@ -114,7 +114,7 @@
             this.Name = "TelaListaLanches";
             this.Text = "TelaListaLanche";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.TelaListaClientes_Load);
+            this.Load += new System.EventHandler(this.TelaListaLanches_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgLanches)).EndInit();
             this.ResumeLayout(false);
 
