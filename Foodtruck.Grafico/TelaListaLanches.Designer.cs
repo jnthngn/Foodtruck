@@ -89,18 +89,21 @@
             this.Id.DataPropertyName = "Id";
             this.Id.HeaderText = "Código";
             this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
             // 
             // Nome
             // 
             this.Nome.DataPropertyName = "Nome";
             this.Nome.HeaderText = "Nome";
             this.Nome.Name = "Nome";
+            this.Nome.ReadOnly = true;
             // 
             // Valor
             // 
             this.Valor.DataPropertyName = "Valor";
             this.Valor.HeaderText = "Valor";
             this.Valor.Name = "Valor";
+            this.Valor.ReadOnly = true;
             // 
             // TelaListaLanches
             // 
@@ -129,6 +132,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nome;
         private System.Windows.Forms.DataGridViewTextBoxColumn Valor;
-        
     }
 }

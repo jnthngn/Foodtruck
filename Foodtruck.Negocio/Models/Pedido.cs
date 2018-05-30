@@ -25,12 +25,24 @@ namespace Foodtruck.Negocio.Models
             this.Bebidas = new List<Bebida>();
         }
 
-        public Decimal ValorTotal()
-        {
-            Decimal totalLanches = this.Lanches.Sum(m => m.Valor);
-            Decimal totalBebidas = this.Bebidas.Sum(m => m.Valor);
-            return totalLanches + totalBebidas;
+        public Decimal ValorTotal
+        {   
+            get
+            {
+                Decimal totalLanches = this.Lanches.Sum(m => m.Valor);
+                Decimal totalBebidas = this.Bebidas.Sum(m => m.Valor);
+                Decimal ValorTotal = totalLanches + totalBebidas;
+                return ValorTotal;
+            }
         }
-        
+        public String DadosCliente
+        {
+            get
+            {
+                String dadosCliente;
+                dadosCliente = this.Cliente.CPF + " - " + this.Cliente.Nome;
+                return dadosCliente;
+            }
+        }
     }
 }

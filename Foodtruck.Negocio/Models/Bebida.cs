@@ -9,7 +9,7 @@ namespace Foodtruck.Negocio.Models
 {
     public class Bebida : Produto
     {
-        public float Tamanho { get; set; }
+        public string Tamanho { get; set; }
 
         [ForeignKey("Bebidas")]
         public virtual ICollection<Pedido> Pedidos { get; set; }

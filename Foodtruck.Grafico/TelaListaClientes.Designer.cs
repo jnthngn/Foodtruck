@@ -40,9 +40,10 @@
             // 
             // btAdicionar
             // 
-            this.btAdicionar.Location = new System.Drawing.Point(12, 26);
+            this.btAdicionar.Location = new System.Drawing.Point(8, 17);
+            this.btAdicionar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btAdicionar.Name = "btAdicionar";
-            this.btAdicionar.Size = new System.Drawing.Size(160, 66);
+            this.btAdicionar.Size = new System.Drawing.Size(107, 42);
             this.btAdicionar.TabIndex = 0;
             this.btAdicionar.Text = "Adicionar";
             this.btAdicionar.UseVisualStyleBackColor = true;
@@ -50,9 +51,10 @@
             // 
             // btRemover
             // 
-            this.btRemover.Location = new System.Drawing.Point(179, 26);
+            this.btRemover.Location = new System.Drawing.Point(119, 17);
+            this.btRemover.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btRemover.Name = "btRemover";
-            this.btRemover.Size = new System.Drawing.Size(168, 66);
+            this.btRemover.Size = new System.Drawing.Size(112, 42);
             this.btRemover.TabIndex = 1;
             this.btRemover.Text = "Remover";
             this.btRemover.UseVisualStyleBackColor = true;
@@ -60,9 +62,10 @@
             // 
             // btAlterar
             // 
-            this.btAlterar.Location = new System.Drawing.Point(354, 26);
+            this.btAlterar.Location = new System.Drawing.Point(236, 17);
+            this.btAlterar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btAlterar.Name = "btAlterar";
-            this.btAlterar.Size = new System.Drawing.Size(144, 66);
+            this.btAlterar.Size = new System.Drawing.Size(96, 42);
             this.btAlterar.TabIndex = 2;
             this.btAlterar.Text = "Alterar";
             this.btAlterar.UseVisualStyleBackColor = true;
@@ -78,10 +81,11 @@
             this.Id,
             this.Nome,
             this.Email});
-            this.dgClientes.Location = new System.Drawing.Point(12, 135);
+            this.dgClientes.Location = new System.Drawing.Point(8, 86);
+            this.dgClientes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgClientes.Name = "dgClientes";
             this.dgClientes.RowTemplate.Height = 33;
-            this.dgClientes.Size = new System.Drawing.Size(1101, 544);
+            this.dgClientes.Size = new System.Drawing.Size(734, 348);
             this.dgClientes.TabIndex = 3;
             // 
             // Id
@@ -89,28 +93,32 @@
             this.Id.DataPropertyName = "Id";
             this.Id.HeaderText = "Codigo";
             this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
             // 
             // Nome
             // 
             this.Nome.DataPropertyName = "Nome";
             this.Nome.HeaderText = "Nome";
             this.Nome.Name = "Nome";
+            this.Nome.ReadOnly = true;
             // 
             // Email
             // 
             this.Email.DataPropertyName = "Email";
             this.Email.HeaderText = "Email";
             this.Email.Name = "Email";
+            this.Email.ReadOnly = true;
             // 
             // TelaListaClientes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1125, 691);
+            this.ClientSize = new System.Drawing.Size(750, 442);
             this.Controls.Add(this.dgClientes);
             this.Controls.Add(this.btAlterar);
             this.Controls.Add(this.btRemover);
             this.Controls.Add(this.btAdicionar);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "TelaListaClientes";
             this.Text = "TelaListaClientes";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

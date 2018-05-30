@@ -34,7 +34,7 @@ namespace Foodtruck.Grafico
                 //passa indentificador com valor negativo se não conseguir converter
             }
             bebida.Nome = tbNome.Text;
-            bebida.Tamanho = Convert.ToSingle(tbTamanho.Text);
+            bebida.Tamanho = tbTamanho.Text;
             bebida.Valor = Convert.ToDecimal(tbValor.Text);
 
             Validacao validacao;
